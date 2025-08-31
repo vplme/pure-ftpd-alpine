@@ -23,7 +23,7 @@ echo "Starting Pure-FTPd in passive mode..."
 echo "Passive ports: $PASSIVE_PORTS"
 
 # Build Pure-FTPd command
-ARGS="-p $PASSIVE_PORTS -d -j -4 -l unix"
+ARGS="-p $PASSIVE_PORTS -d -j -4 -l unix -A"
 
 # Add passive IP if specified
 if [ -n "$PASSIVE_IP" ]; then
